@@ -1,4 +1,82 @@
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+  font-family: sans-serif;
+  text-align: center;
 }
+
+h3 {
+  position: absolute;
+  font-family: serif;
+  font-size: 200%;
+  top: 20px;
+  left: 20px;
+}
+
+.emphasis {
+  font-size: 200%;
+  text-transform: uppercase;
+}
+
+.preview {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.preview.baku {
+  position: relative;
+}
+
+.preview.london {
+  position: relative;
+}
+
+.preview.madrid {
+  position: relative;
+}
+
+.preview.rome {
+  position: relative;
+}
+
+.container {
+  margin: 20px auto;
+  width: 100%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* one column for smartphones */
+div {
+  float: left;
+  margin: 5px 0;
+  width: 100%;
+  padding: 0px;
+}
+
+
+/*two columns for tablets & large smartphones */
+@media screen and (min-width: 575px){
+   div {
+    margin: 1%;
+    width: 48%;
+  }
+
+
+/*four columns for desktops */
+@media screen and (min-width: 1199px){
+    div {
+      margin: 1%;
+      width: 23%; /* might need to be larger if not every div has its own margin
+          would need to be something like 32 */
+  }
